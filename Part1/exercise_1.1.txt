@@ -1,0 +1,4 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+c958e8a44733        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 30 seconds ago                       elegant_bhaskara
+1ba29717d086        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 25 seconds ago                       dreamy_pike
+7aff5c9417df        nginx               "nginx -g 'daemon of…"   About a minute ago   Up About a minute           80/tcp              confident_hamilton
