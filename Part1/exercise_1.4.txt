@@ -1,0 +1,22 @@
+$ docker run -d --rm -it --name exercise1.4 devopsdockeruh/exec_bash_exercise
+699d9d95a3f34bac99cb80f3fcbaa212ee9bacb134f50c8b29a084a1a57adc68
+
+FIPEALH@FI-L-7242380 MINGW64 /c/pekka/DevOps-with-Docker/Part1 (master)
+$ docker exec -it exercise1.4 bash
+root@699d9d95a3f3:/usr/app# tail -f ./logs.txt
+Tue, 16 Jul 2019 07:59:57 GMT
+Tue, 16 Jul 2019 08:00:00 GMT
+Tue, 16 Jul 2019 08:00:03 GMT
+Tue, 16 Jul 2019 08:00:06 GMT
+Secret message is:
+"Docker is easy"
+Tue, 16 Jul 2019 08:00:12 GMT
+Tue, 16 Jul 2019 08:00:15 GMT
+Tue, 16 Jul 2019 08:00:18 GMT
+^C
+root@699d9d95a3f3:/usr/app# exit
+exit
+
+FIPEALH@FI-L-7242380 MINGW64 /c/pekka/DevOps-with-Docker/Part1 (master)
+$ docker stop exercise1.4
+exercise1.4

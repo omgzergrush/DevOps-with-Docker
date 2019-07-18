@@ -1,0 +1,25 @@
+FIPEALH@FI-L-7242380 MINGW64 /c/pekka/DevOps-with-Docker/Part1 (master)
+$ docker run -d --rm -it --name exercise1.5 ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl --proxy http://access505.cws.sco.cisco.com:8 080 http://$website;'
+1a3898096184953d53476e5ed1f1e9316069663617fd8fa1472fbc39d17fb045
+
+C:\Users\FIPEALH\AppData\Local\cmder
+λ docker cp proxy.conf exercise1.5:/etc/apt/apt.conf.d/proxy.conf
+
+C:\Users\FIPEALH\AppData\Local\cmder
+λ docker exec -it exercise1.5 bash
+root@1a3898096184:/# apt-get update
+...
+root@1a3898096184:/# apt-get install curl
+...
+
+FIPEALH@FI-L-7242380 MINGW64 /c/pekka/DevOps-with-Docker/Part1 (master)
+$ docker attach exercise1.5
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
